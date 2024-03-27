@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\fafan\\source\\repos\\qlearning\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE3DC0A-2C39-4E1E-B5EE-C6EB01C39CFA}|qlearning\\qlearning.vcxproj|C:\\Users\\fafan\\source\\repos\\qlearning\\qlearning\\qlearning.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8DE3DC0A-2C39-4E1E-B5EE-C6EB01C39CFA}|qlearning\\qlearning.vcxproj|solutionrelative:qlearning\\qlearning.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "qlearning.cpp",
+              "DocumentMoniker": "C:\\Users\\fafan\\source\\repos\\qlearning\\qlearning\\qlearning.cpp",
+              "RelativeDocumentMoniker": "qlearning\\qlearning.cpp",
+              "ToolTip": "C:\\Users\\fafan\\source\\repos\\qlearning\\qlearning\\qlearning.cpp",
+              "RelativeToolTip": "qlearning\\qlearning.cpp",
+              "ViewState": "AQIAABkAAAAAAAAAAAAYwH0AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-26T19:40:53.732Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

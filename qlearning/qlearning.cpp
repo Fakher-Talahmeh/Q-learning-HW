@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <string.h>
 #include <cmath>
 using namespace std;
 const int MATRIX_ROW = 6;
@@ -53,17 +52,14 @@ int episode_iterator(int init_state, double Q[100][100], double R[100][100]) {
     int next_action;
     double max_q;
     int step = 0;
-    while (1) {
-        memset(possible_action, 0, 10 * sizeof(int));
+    int w = 0;
+        while (1) {
         get_possible_action(R, init_state, possible_action);
-
         next_action = possible_action[rand() % possible_action_num];
         max_q = get_max_q(Q, next_action);
-
         Q_before = Q[init_state][next_action];
         Q[init_state][next_action] = R[init_state][next_action] + alpha * max_q;
         Q_after = Q[init_state][next_action];
-
         if (next_action == DES_STATE) {
             init_state = rand() % STATE_NUM;
             break;
@@ -89,39 +85,18 @@ int inference_best_action(int now_state, double Q[100][100]) {
 }
 void run_training(int init_state) {
     int initial_state = init_state;
-    srand((unsigned)time(NULL));
     for (int i = 0; i < MAX_EPISODE; ++i) {
         initial_state = episode_iterator(initial_state, Q, R);
     }
 }
 
 int main() {
-
     cout << "Q matrix:" << endl;
     print_matrix(Q, 6, 6);
     cout << "R matrix:" << endl;
     print_matrix(R, 6, 6);
-
     run_training(1);
     cout << "Q convergence matrix:" << endl;
     print_matrix(Q, 6, 6);
-
-    int position;
-    while (1) {
-        cout << "please input robot locate room: " << endl;
-        cin >> position;
-        cout << position << "->";
-        while (1) {
-            int best_action = inference_best_action(position, Q);
-            cout << best_action << "->";
-            if (best_action == DES_STATE) {
-                cout << "out" << endl;
-                break;
-            }
-            else {
-                position = best_action;
-            }
-        }
-    }
     return 0;
 }

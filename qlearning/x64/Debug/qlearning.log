@@ -1,3 +1,3 @@
 ﻿  qlearning.cpp
-C:\Users\fafan\source\repos\qlearning\qlearning\qlearning.cpp(12,21): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\fafan\source\repos\qlearning\qlearning\qlearning.cpp(11,21): warning C4305: 'initializing': truncation from 'double' to 'float'
   qlearning.vcxproj -> C:\Users\fafan\source\repos\qlearning\x64\Debug\qlearning.exe
